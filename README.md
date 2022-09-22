@@ -22,13 +22,14 @@
     ["boostinglaptop"] 				= {["name"] = "boostinglaptop", 			 	["label"] = "Special Laptop", 			["weight"] = 500, 		["type"] = "item", 		["image"] = "toughlaptop.png", 		["unique"] = true, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "This laptop has a few dents and scratches\n but is still functional."},
     ['hackerman_accesscard'] 		= {['name'] = 'hackerman_accesscard', 			['label'] = 'Access Card', 			    ['weight'] = 0, 	    ['type'] = 'item', 		['image'] = 'hackerman_accesscard.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'An access card... I wonder what it goes to'},
 ```
-    note, none of these crafted items actually do anything without needing to tie these items to your other scripts, ie boosting laptop stuff from a carboosting script, and vpn software from my unpublished house robberies script
+
+Note, none of these crafted items actually do anything without needing to tie these items to your other scripts, 
+ie boosting laptop stuff from a carboosting script, and vpn software from my unpublished house robberies script
 
 
 
 ###     add to qb-doorlock/configs
 ```lua
-    --[[
         -- hackerspace-maindoor created by Troubleshooter_
         Config.DoorList['hackerspace-hackerspace-maindoor'] = {
             doorRate = 1.0,
@@ -42,6 +43,4 @@
             objCoords = vec3(-583.686646, 228.596497, 78.375748),
             locked = true,
         }
-
-    ]]
-    ```
+```
