@@ -3,12 +3,14 @@
 ## NPC trades cryptostick for software.
 
 ## Software can be installed on an `empty_usb` stick and in turn used to craft a laptop or something.
+
+
+### add to your shared/items.lua
 ```lua
 --[[
-
-    add to your shared/items.lua
     you might have some already, just make sure the crafting/combining section is transferred over, eg:
     ['combinable'] = {accept = {'empty_usb'}, reward = 'vpn_usb', anim = {['dict'] = 'anim@amb@business@weed@weed_inspecting_high_dry@', ['lib'] = 'weed_inspecting_high_base_inspector', ['text'] = 'Uploading firmware..', ['timeOut'] = 10000}},
+    ]]
 
     ["hacking_software"] 			= {["name"] = "hacking_software", 			 	["label"] = "Illicit Software", 		["weight"] = 100, 		["type"] = "item", 		["image"] = "software.png", 		["unique"] = true, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "hacking software!"},
     ["empty_usb"] 					= {["name"] = "empty_usb", 			 	 		["label"] = "Empty USB", 				["weight"] = 100, 		["type"] = "item", 		["image"] = "usbplugin.png", 		["unique"] = true, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Blank USB Device!"},
@@ -22,10 +24,10 @@
 
     note, none of these crafted items actually do anything without needing to tie these items to your other scripts, ie boosting laptop stuff from a carboosting script, and vpn software from my unpublished house robberies script
     ]]
+```
 
-
-    -- add to qb-doorlock/configs
-
+###     add to qb-doorlock/configs
+```lua
     --[[
         -- hackerspace-maindoor created by Troubleshooter_
         Config.DoorList['hackerspace-hackerspace-maindoor'] = {
